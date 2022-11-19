@@ -7,20 +7,59 @@
     </head>
 
     <body>
-        <form action="/action_page.php" method="GET" enctype="text/plain">
+        <form action="http://paxinas.danielcastelao.org/action_page.php" method="GET">
 
-            <label for="NIF">NIF:</label><br>
-            <input type="text" name="NIF" value="" size="9" maxlength="9"><br>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" name="nombre" value=""><br>
-            <label for="apellidos">Apellidos</label><br>
-            <input type="text" name="apellidos" value="">
+            <br><br>
+
+            <label for="NIF">NIF:</label>
+            <input type="text" name="NIF" value="" size="9" maxlength="9"><br><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" value=""><br><br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" value=""><br><br>
+
+            <br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="radio" id="rango1" name="edad" value="15-19">
+            <label for="rango1">15-19</label><br>
+            <input type="radio" id="rango2" name="edad" value="20-29">
+            <label for="rango2">20-29</label><br>
+            <input type="radio" id="rango3" name="edad" value="30-40">
+            <label for="rango3">30-40</label><br>
+
+            <br>
+
+            <label for="estado">Estado civil:</label><br>
+            <select id="estado" name="estado" size="3">
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+            </select>
+
+            <br><br>
+
+            <label for="aficiones">Aficiones</label><br>
+            <input type="checkbox" id="aficion1" name="aficion1" value="Cine">
+            <label for="aficion1">Cine</label><br>
+            <input type="checkbox" id="aficion2" name="aficion2" value="Deportes">
+            <label for="aficion2">Deportes</label><br>
+            <input type="checkbox" id="aficion3" name="aficion3" value="Lectura">
+            <label for="aficion3">Lectura</label><br>
+            <input type="checkbox" id="aficion4" value="Senderismo">
+            <label for="aficion4">Senderismo</label><br>
+            
+
+            <br><br>
+
+            <label for="comentarios">Comentarios</label><br>
+            <textarea name="comentarios" rows="10" cols="25">Escribe aquí tus comentarios</textarea>
 
 
 
+            <br><br><br>
 
-
-
+            <input type="submit" value="Enviar datos">
 
           </form>
     </body>
